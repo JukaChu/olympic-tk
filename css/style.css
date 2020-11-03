@@ -1,0 +1,32 @@
+@import "./variables.css";
+@import "./header.css";
+@import "./main-content.css";
+@import "./footer.css";
+
+
+body {
+    margin: 0 auto;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.main-container {
+    box-sizing: border-box;
+    width: 1410px;
+}
+
+@media (max-width: 1410px) {
+    .main-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+

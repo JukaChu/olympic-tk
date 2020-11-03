@@ -1,0 +1,109 @@
+.olympic-footer {
+    min-height: 398px;
+    background: var(--header-footer-bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+.olympic-footer__footer-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.olympic-footer__footer-logo-container {
+    max-width: 262px;
+    display: flex;
+    height: 140px;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1025px) {
+    .olympic-footer__footer-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 25px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .olympic-footer__footer-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 25px;
+    }
+
+    .olympic-footer__footer-logo-container {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+.footer-logo-container {
+    font-family: var(--main-font);
+    color: #Ffffff;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    padding-left: 19px;
+}
+
+.olympic-footer__info-for-clients {
+    margin: 0 15px 26px;
+}
+
+.footer-title-info {
+    font-family: var(--titles-font);
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    padding-bottom: 26px;
+}
+
+.info-for-clients__links {
+    display: flex;
+    height: 140px;
+    flex-direction: column;
+}
+
+.info-for-clients__links--social {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 145px;
+}
+
+.info-for-clients__links .info-for-clients__navigation-link,
+.info-for-clients__links span {
+    font-family: var(--titles-font);
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.location-footer span:first-child::before {
+    content: url("../img/email-footer.svg");
+    padding-right: 15px;
+    padding-bottom: 4px;
+}
+
+.location-footer span:nth-child(2n)::before,
+.location-footer span:last-child::before {
+    content: url("../img/location-footer.svg");
+    padding-right: 15px;
+
+}
+
+.info-for-clients__social {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
